@@ -10,8 +10,8 @@ spec:
         app: hpa-demo
     spec:
       containers:
-      - name: hpa-example
-        image: gcr.io/google_containers/hpa-example
+      - name: hpa-demo
+        image: gcr.io/google_containers/hpa-demo
         ports:
         - name: http-port
           containerPort: 80
@@ -22,7 +22,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: hpa-example
+  name: hpa-demo
 spec:
   ports:
   - port: 31001
